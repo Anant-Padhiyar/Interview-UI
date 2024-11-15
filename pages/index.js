@@ -27,19 +27,19 @@ export default function Home() {
 
 <div className="border border-gray-300 p-4 flex flex-col items-center pb-8 pt-5" 
     style={{ background: 'linear-gradient(279.96deg, #FFFFFF 14.74%, #E7F2FF 99.01%)' }}>
- <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>12</div>
+ <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>12 +</div>
  <div className="text-sm font-bold mt-1">Projects Completed</div>
 </div>
 
 <div className="border border-gray-300 p-4 flex flex-col items-center pb-8 pt-5" 
     style={{ background: 'linear-gradient(279.96deg, #FFFFFF 14.74%, #E7F2FF 99.01%)' }}>
- <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>24</div>
+ <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>24 +</div>
  <div className="text-sm font-bold mt-1">Happy Clients</div>
 </div>
 
 <div className="border border-gray-300 p-4 flex flex-col items-center pb-8 pt-5" 
     style={{ background: 'linear-gradient(279.96deg, #FFFFFF 14.74%, #E7F2FF 99.01%)' }}>
- <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>5</div>
+ <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>5 +</div>
  <div className="text-sm font-bold mt-1">Awards Won</div>
 </div>
 </div>
