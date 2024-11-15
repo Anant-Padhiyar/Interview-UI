@@ -142,9 +142,9 @@ header {
   object-fit: cover;        /* Ensures images cover the space without distorting */
 }
 
-/* Responsive design for small screens */
+/* Strict responsive design for small screens */
 @media (max-width: 768px) {
   .image-container img {
-    flex: 0 0 100%;         /* 1 image per row (100% width) */
+    flex: 0 0 100%;         /* Force 1 image per row (100% width) */
   }
 }
