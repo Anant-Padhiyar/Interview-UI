@@ -19,28 +19,28 @@ export default function Home() {
 
 
 <div className="border-0 lg:mx-5 lg:my-5 lg:px-5 lg:py-5 grid grid-cols-2 gap-4 mx-4 my-4">
-<div className="border border-gray-300 p-4 flex flex-col items-center" 
+<div className="border border-gray-300 p-4 flex flex-col items-center pb-8 pt-5 px-5" 
     style={{ background: 'linear-gradient(279.96deg, #FFFFFF 14.74%, #E7F2FF 99.01%)' }}>
- <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>6</div>
- <div className="text-sm">Years of Experience</div>
+ <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>6 + </div>
+ <div className="text-sm font-bold mt-1">Years of Experience</div>
 </div>
 
-<div className="border border-gray-300 p-4 flex flex-col items-center" 
+<div className="border border-gray-300 p-4 flex flex-col items-center pb-8 pt-5" 
     style={{ background: 'linear-gradient(279.96deg, #FFFFFF 14.74%, #E7F2FF 99.01%)' }}>
  <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>12</div>
- <div className="text-sm">Projects Completed</div>
+ <div className="text-sm font-bold mt-1">Projects Completed</div>
 </div>
 
-<div className="border border-gray-300 p-4 flex flex-col items-center" 
+<div className="border border-gray-300 p-4 flex flex-col items-center pb-8 pt-5" 
     style={{ background: 'linear-gradient(279.96deg, #FFFFFF 14.74%, #E7F2FF 99.01%)' }}>
  <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>24</div>
- <div className="text-sm">Happy Clients</div>
+ <div className="text-sm font-bold mt-1">Happy Clients</div>
 </div>
 
-<div className="border border-gray-300 p-4 flex flex-col items-center" 
+<div className="border border-gray-300 p-4 flex flex-col items-center pb-8 pt-5" 
     style={{ background: 'linear-gradient(279.96deg, #FFFFFF 14.74%, #E7F2FF 99.01%)' }}>
  <div className="text-3xl font-bold" style={{ color: '#1263C0' }}>5</div>
- <div className="text-sm">Awards Won</div>
+ <div className="text-sm font-bold mt-1">Awards Won</div>
 </div>
 </div>
 
