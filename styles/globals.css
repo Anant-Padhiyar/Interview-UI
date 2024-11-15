@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* Styles for the Navbar component */
+
+header {
+  background: #813030;
+  width: 100%;
+  height: 53px;
+  padding: 0 5px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between; /* Keep this to maintain spacing between left and right content */
+  align-items: right;/* Align items in the header */
+  z-index: 1000; /* Set a value higher than the z-index of other elements */
+  position: relative;
+}
+
+.f {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Hamburger menu icon animation for open state */
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, 4px) scaleX(1); /* Adjust the scaleX value to visually equalize the size */
+}
+
+.open .bar:nth-child(2) {
+  transform: rotate(45deg) translate(-5px, -4px) scaleX(1); /* Adjust the scaleX value to visually equalize the size */
+}
+
+/* for Slider */
+.Slider-Animation-container {
+  width: 275px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Slider-Animation-bar {
+  height: 100vh;
+  background: #ffffff;
+  position: absolute;
+  margin-top: 53px;
+  top: 0;
+  left: -100%; /* Start offscreen to the left */
+  transition: left 0.3s ease-in-out;
+}
+
+.Slider-Animation-bar.visible {
+  left: 0; /* Slide in from the left */
+}
+
+/* for Slider */
+.Slider-Animation-container2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* Light mode = #cccccc55 */
+/* Dark mode = #27272765 */
+.Slider-Animation-bar2 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  margin-top: 53px;
+  margin-left: 275px;
+  top: 0;
+  left: -200%; 
+  transition-delay: 0.3s;
+}
+
+.Slider-Animation-bar2.visible {
+  left: 0; /* Slide in from the left */
+}
+
+/* for Slider */
+.Slider-Animation-container3 {
+  width: 275px;
+  height: 100%;
+  overflow: hidden;
+}
+/* Light mode = #cccccc55 */
+/* Dark mode = #27272765 */
+.Slider-Animation-bar3 {
+  height: 100vh;
+  width: 275px;
+  position: absolute;
+  margin-top: 53px;
+  top: 0;
+  left: -200%; 
+  transition-delay: 0.3s;
+}
+
+.Slider-Animation-bar3.visible {
+  left: 0; /* Slide in from the left */
+}
+
+.Footer-container {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+
+/* The container for the images */
+.image-container {
+  display: flex;            /* Use flexbox to display images in a row */
+  justify-content: flex-start; /* Align images to the left */
+  gap: 0;                    /* Ensure there's no gap between images */
+  width: 100%;               /* Ensure the container takes the full width of its parent */
+  padding: 0;                /* Remove any padding */
+  margin: 0;                 /* Remove any margin */
+}
+
+/* Style for the images */
+.image-container img {
+  width: 33.33%;             /* Each image will take up 33.33% of the container */
+  height: auto;              /* Maintain aspect ratio */
+  object-fit: cover;         /* Ensures images cover the space without distorting */
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+  .image-container img {
+    width: 33.33%;           /* Images still take 33.33% of the width on tablet/mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container img {
+    width: 33.33%;           /* Keep images at 33.33% of the container width on small screens */
+  }
+}
